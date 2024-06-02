@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+p {
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #2b4162;
+  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+  min-height: 100vh;
+}
+html .not-found,
+body .not-found {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+}
+html .not-found a,
+body .not-found a {
+  color: #fff;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+html .not-found a svg,
+body .not-found a svg {
+  margin-right: 10px;
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+}
+html header,
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+  font-size: 35px;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+html header a,
+body header a {
+  color: #fff;
+}
+html header a svg,
+body header a svg {
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;
+  fill: #fff;
+}
+html header a span,
+body header a span {
+  color: #1963d3;
+  margin-left: 5px;
+}
+html main,
+body main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+html main .search,
+body main .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 20px;
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+html main .search input,
+body main .search input {
+  border: none;
+  padding-right: 10px;
+  font-size: 17px;
+  width: 220px;
+}
+html main .search input::-moz-placeholder, body main .search input::-moz-placeholder {
+  font-size: 17px;
+  color: #000;
+}
+html main .search input::placeholder,
+body main .search input::placeholder {
+  font-size: 17px;
+  color: #000;
+}
+html main table,
+body main table {
+  margin: 0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+html main table thead tr th,
+body main table thead tr th {
+  background: #19334d !important;
+  color: #fff !important;
+  font-size: 18px;
+  text-align: center;
+}
+html main table tbody tr,
+body main table tbody tr {
+  transition: 300ms all;
+}
+html main table tbody tr:hover,
+body main table tbody tr:hover {
+  transform: scale(0.99);
+}
+html main table tbody tr td,
+body main table tbody tr td {
+  background-color: #181313 !important;
+  padding: 20px !important;
+  color: #fff !important;
+  text-align: center;
+}
+html main table tbody tr td .img-info,
+body main table tbody tr td .img-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+html main table tbody tr td .img-info img,
+body main table tbody tr td .img-info img {
+  width: 30px;
+  margin-right: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html main .button-control,
+body main .button-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html main .button-control span,
+body main .button-control span {
+  display: grid;
+  place-items: center;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 30px;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  font-weight: bold;
+}
+html main .flex-area,
+body main .flex-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-top: 20px;
+  gap: 15px;
+}
+html main .flex-area select,
+body main .flex-area select {
+  color: #000;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 5px;
+}
+html .spinner,
+body .spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+html .coin-container,
+body .coin-container {
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+html .coin-container .content,
+body .coin-container .content {
+  display: flex;
+}
+html .coin-container .content h2,
+html .coin-container .content h3,
+body .coin-container .content h2,
+body .coin-container .content h3 {
+  color: #fff;
+}
+html .coin-container .rank-area,
+body .coin-container .rank-area {
+  text-align: center;
+}
+html .coin-container .rank-area .rank-btn,
+body .coin-container .rank-area .rank-btn {
+  color: #fff;
+  font-size: 20px;
+  margin: 10px auto 20px;
+  display: block;
+  background: #1963d3;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+html .coin-container .rank-area .info,
+body .coin-container .rank-area .info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+html .coin-container .stats,
+body .coin-container .stats {
+  color: #fff;
+  display: flex;
+  gap: 15px;
+  margin: 6px 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+html .coin-container .stats div,
+body .coin-container .stats div {
+  border-radius: 10px;
+  padding: 15px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 300ms all;
+  width: 100%;
+  margin: 0 auto;
+}
+html .coin-container .stats div:hover,
+body .coin-container .stats div:hover {
+  transform: scale(0.95);
+  background: #19334d;
+}
+html .coin-container .about,
+body .coin-container .about {
+  border: 2px solid #043277;
+  margin: 30px 0;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #fff;
+}
+html .coin-container .about h3,
+body .coin-container .about h3 {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  html main .table-area,
+  body main .table-area {
+    max-width: 100% !important;
+    overflow: auto;
+  }
+  html main .table-area thead,
+  body main .table-area thead {
+    white-space: nowrap;
+  }
+  html main .table-area tbody tr td,
+  body main .table-area tbody tr td {
+    padding: 15px !important;
+  }
+  html main .table-area tbody tr td .img-info img,
+  body main .table-area tbody tr td .img-info img {
+    width: 20px;
+  }
+}
+@media only screen and (max-width: 578px) {
+  html header,
+  body header {
+    padding: 10px 0;
+  }
+  html header a,
+  body header a {
+    font-size: 25px;
+  }
+  html header a svg,
+  body header a svg {
+    width: 30px;
+  }
+  html .coin-container .rank-area .rank-btn,
+  body .coin-container .rank-area .rank-btn {
+    font-size: 18px;
+  }
+  html .coin-container .stats,
+  body .coin-container .stats {
+    gap: 10px;
+    margin: 5px;
+  }
+  html .coin-container .stats h4,
+  body .coin-container .stats h4 {
+    font-size: 16px;
+  }
+  html .coin-container .stats div,
+  body .coin-container .stats div {
+    font-size: 15px;
+  }
+  html .coin-container .about,
+  body .coin-container .about {
+    font-size: 17px;
+  }
+  html .coin-container .about h3,
+  body .coin-container .about h3 {
+    font-size: 20px;
+  }
+  html main .search,
+  body main .search {
+    padding: 10px 20px;
+  }
+  html main .search input,
+  body main .search input {
+    font-size: 16px;
+    width: 200px;
+  }
+  html main .search input::-moz-placeholder, body main .search input::-moz-placeholder {
+    font-size: 16px;
+  }
+  html main .search input::placeholder,
+  body main .search input::placeholder {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=App.css.map */
